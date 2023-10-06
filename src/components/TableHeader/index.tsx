@@ -1,7 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import SwapVertIcon from "@mui/icons-material/SwapVert";
 import useSort from "../../hooks/useSort";
-import SearchField from "../TopNavTickets/SearchField";
 
 const TableHeader = () => {
   const { sorting } = useSort();
