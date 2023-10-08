@@ -9,7 +9,7 @@ import Replies from "./Replies";
 import NoTicketsFound from "./NoTicketsFound";
 import PaginationControl from "../PaginationControl/PaginationControl";
 import usePagination from "../../hooks/usePagination";
-import LoadingSpinner from "../../utils/LoadingSpinner";
+import TableContentSkeletons from "../../utils/LoadingStateSkeletons";
 import { TableData } from "../../types/reducerTypes";
 import TableTitle from "./TableTitle";
 import TableStatus from "./TableStatus";
@@ -40,7 +40,7 @@ function TableContent() {
       }}
     >
       {loading ? (
-        <LoadingSpinner />
+        <TableContentSkeletons />
       ) : TicketsNotFound ? (
         <NoTicketsFound />
       ) : (
